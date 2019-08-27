@@ -1,17 +1,124 @@
 .dirve-main
-	width: 100%
-	min-height: 700px
-	background: #999 
-	> section
+  width: 100%
+  min-height: 700px
+  background: #f8f8f8
+  > section
     max-width: 1280px
     padding-left: 85px
     padding-right: 85px
     margin-right: auto
     margin-left: auto
-	&-header
-    display: flex
-    align-items: center
-    justify-content: space-between
-	&-title
-		text-transform: uppercase
-		
+
+.dirve-main-header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding-top: 20px
+  padding-bottom: 20px
+  text-transform: uppercase
+  font-weight: bold
+  i
+    margin-left: 32px
+    cursor: pointer
+
+.dirve-main-title
+  font-size: 24px
+
+.dirve-main-showall
+  cursor: pointer
+
+.dirve-main-container
+  box-sizing: border-box
+  display: flex
+  align-items: center
+  padding-bottom: 20px
+  max-width: 1280px
+  flex-wrap: wrap
+
+.folder-item
+  width: 255px
+  height: 72px
+  display: flex
+  margin: 20px
+  align-items: center
+  background-color: #fff
+  box-shadow: 0px 2px 4px #ccc
+  border-radius: 8px
+  cursor: pointer
+  i
+    padding: 24px
+
+.file-list-header
+  display: flex
+  width: 100%
+  text-transform: uppercase
+
+.file-list-header-icon
+  width: 10%
+  height: 70px
+  line-height: 70px
+
+.file-list-header
+  border-bottom: 2px solid #ccc
+
+.file-list-header-name
+  display: flex
+  align-items: center
+  width: 40%
+  height: 70px
+  line-height: 70px
+  font-weight: 900
+  span
+    margin-right: 10px
+
+.file-list-header-location, .file-list-header-time
+  display: flex
+  align-items: center
+  width: 15%
+  height: 70px
+
+.file-list-header-size
+  display: flex
+  align-items: center
+  width: 20%
+  height: 70px
+
+.file-list-item
+  display: flex
+  width: 100%
+  cursor: pointer
+
+.file-list-item-icon
+  width: 10%
+  height: 70px
+  line-height: 70px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.file-list-item
+  color: #666
+  border-bottom: 2px solid #ccc
+
+.file-list-item-name
+  display: flex
+  align-items: center
+  width: 40%
+  height: 70px
+  line-height: 70px
+  font-weight: 900
+  span
+    margin-right: 10px
+
+.file-list-item-location,
+.file-list-item-time
+  display: flex
+  align-items: center
+  width: 15%
+  height: 70px
+
+.file-list-item-size
+  display: flex
+  align-items: center
+  width: 20%
+  height: 70px

@@ -1,7 +1,7 @@
 .dirve-main {
 	width: 100%;
 	min-height: 700px;
-	background: #999;
+	background: #f8f8f8;
 }
 
 .dirve-main > section {
@@ -16,7 +16,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #fff;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-transform: uppercase;
@@ -31,4 +30,119 @@
 }
 .dirve-main-showall {
 	cursor: pointer;
+}
+
+.dirve-main-container {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;	
+	padding-bottom: 20px;
+	max-width: 1280px;
+	flex-wrap: wrap;
+}
+
+.folder-item {
+	width: 255px;
+	height: 72px;
+	display: flex;
+	margin: 20px;
+	align-items: center;
+	background-color: #fff;
+	box-shadow: 0px 2px 4px #ccc;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.folder-item i {
+	padding: 24px;
+}
+.file-list-header {
+	display: flex;
+	width: 100%;
+	text-transform: uppercase;
+}
+.file-list-header-icon {
+	width: 10%;
+	height: 70px;
+	line-height: 70px;
+}
+.file-list-header {
+	border-bottom: 2px solid #ccc;
+}
+.file-list-header-name {
+	display: flex;
+	align-items: center;
+	width: 40%;
+	height: 70px;
+	line-height: 70px;
+	font-weight: 900;
+}
+.file-list-header-name span {
+	margin-right: 10px;
+}
+.file-list-header-location {
+	display: flex;
+	align-items: center;
+	width: 15%;
+	height: 70px;
+}
+.file-list-header-time {
+	display: flex;
+	align-items: center;
+	width: 15%;
+	height: 70px;
+}
+.file-list-header-size {
+	display: flex;
+	align-items: center;
+	width: 20%;
+	height: 70px;
+}
+
+
+
+.file-list-item {
+	display: flex;
+	width: 100%;
+	cursor: pointer;
+}
+.file-list-item-icon {
+	width: 10%;
+	height: 70px;
+	line-height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.file-list-item {
+	color: #666;
+	border-bottom: 2px solid #ccc;
+}
+.file-list-item-name {
+	display: flex;
+	align-items: center;
+	width: 40%;
+	height: 70px;
+	line-height: 70px;
+	font-weight: 900;
+}
+.file-list-item-name span {
+	margin-right: 10px;
+}
+.file-list-item-location {
+	display: flex;
+	align-items: center;
+	width: 15%;
+	height: 70px;
+}
+.file-list-item-time {
+	display: flex;
+	align-items: center;
+	width: 15%;
+	height: 70px;
+}
+.file-list-item-size {
+	display: flex;
+	align-items: center;
+	width: 20%;
+	height: 70px;
 }

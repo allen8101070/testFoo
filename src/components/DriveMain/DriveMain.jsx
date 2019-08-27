@@ -1,5 +1,11 @@
 import React from 'react';
-import "./index.css";
+import "./index.sass";
+import excel from "../../assets/ic-excel.svg"
+import pdf from "../../assets/ic-pdf.svg"
+import ppt from "../../assets/ic-ppt.svg"
+import word from "../../assets/ic-word.svg"
+import unkown from "../../assets/ic-unkown.svg"
+
 
 export default class DriveMain extends React.Component {
 	constructor() {
@@ -12,39 +18,169 @@ export default class DriveMain extends React.Component {
 			<nav className="dirve-main">
 				<section>
 					<div className="dirve-main-header">
-						<div className="dirve-main-title">starred</div>
-						<div>
-							<span className="dirve-main-showall">show all</span>
-						</div>
-					</div>
-					
-					<div className="dirve-main-header">
 						<div className="dirve-main-title">folders</div>
 						<div>
 							<span>
-								<i class="material-icons">
+								<i className="material-icons">
 									view_list
 								</i>
-								<i class="material-icons">
+								<i className="material-icons">
 									view_module
 								</i>
 							</span>
 						</div>
 					</div>
+					<div className="dirve-main-container">
+						<div className="folder-item">
+							<i className="material-icons">folder</i>
+							<span>2018 activities</span>
+						</div>
+						<div className="folder-item">
+							<i className="material-icons">folder</i>
+							<span>temporary files</span>
+						</div>
+						<div className="folder-item">
+							<i className="material-icons">folder</i>
+							<span>growth hacker</span>
+						</div>
+						<div className="folder-item">
+							<i className="material-icons">folder</i>
+							<span>Motion design</span>
+						</div>
+						<div className="folder-item">
+							<i className="material-icons">folder</i>
+							<span>web practice</span>
+						</div>
+						<div className="folder-item">
+							<i className="material-icons">folder</i>
+							<span>facebook</span>
+						</div>
+						</div>
 
 					<div className="dirve-main-header">
 						<div className="dirve-main-title">files</div>
 						<div>
 							<span>
-								<i class="material-icons">
+								<i className="material-icons">
 									view_list
 								</i>
-								<i class="material-icons">
+								<i className="material-icons">
 									view_module
 								</i>
 							</span>
 						</div>
 					</div>
+					<div className="dirve-main-container">
+
+							<div className="file-list-header">
+								<div className="file-list-header-icon"></div>
+								<div className="file-list-header-name">
+									<span>name</span>
+										<i className="material-icons">arrow_downward</i>
+								</div>
+								<div className="file-list-header-location">
+									<span>location</span>
+								</div>
+								<div className="file-list-header-time">
+									<span>last modified</span>
+								</div>
+								<div className="file-list-header-size">
+									<span>size</span>
+								</div>
+							</div>
+					
+							<div className="file-list-item">
+								<div className="file-list-item-icon">
+									<img src={excel} alt="excel-icon"/>
+								</div>
+								<div className="file-list-item-name">
+									<span>Ad-benefit-august.csv</span>
+								</div>
+								<div className="file-list-item-location">
+									<span>my drive</span>
+								</div>
+								<div className="file-list-item-time">
+									<span>2019/8/20</span>
+								</div>
+								<div className="file-list-item-size">
+									<span>6 kb</span>
+								</div>
+							</div>
+
+							<div className="file-list-item">
+								<div className="file-list-item-icon">
+									<img src={ppt} alt="ppt-icon"/>
+								</div>
+								<div className="file-list-item-name">
+									<span>How To Pick A Right Web Font.pptx</span>
+								</div>
+								<div className="file-list-item-location">
+									<span>my drive</span>
+								</div>
+								<div className="file-list-item-time">
+									<span>2019/8/20</span>
+								</div>
+								<div className="file-list-item-size">
+									<span>32 mb</span>
+								</div>
+							</div>
+
+							<div className="file-list-item">
+								<div className="file-list-item-icon">
+									<img src={pdf} alt="pdf-icon"/>
+								</div>
+								<div className="file-list-item-name">
+									<span>Presentation-Q1.pdf</span>
+								</div>
+								<div className="file-list-item-location">
+									<span>my drive</span>
+								</div>
+								<div className="file-list-item-time">
+									<span>2019/8/20</span>
+								</div>
+								<div className="file-list-item-size">
+									<span>10 mb</span>
+								</div>
+							</div>
+
+							<div className="file-list-item">
+								<div className="file-list-item-icon">
+									<img src={word} alt="word-icon"/>
+								</div>
+								<div className="file-list-item-name">
+									<span>New document.doc</span>
+								</div>
+								<div className="file-list-item-location">
+									<span>my drive</span>
+								</div>
+								<div className="file-list-item-time">
+									<span>2019/8/20</span>
+								</div>
+								<div className="file-list-item-size">
+									<span>102 kb</span>
+								</div>
+							</div>
+
+							<div className="file-list-item">
+								<div className="file-list-item-icon">
+									<img src={unkown} alt="unkown-icon"/>
+								</div>
+								<div className="file-list-item-name">
+									<span>Readme.txt</span>
+								</div>
+								<div className="file-list-item-location">
+									<span>my drive</span>
+								</div>
+								<div className="file-list-item-time">
+									<span>2019/8/20</span>
+								</div>
+								<div className="file-list-item-size">
+									<span>2 kb</span>
+								</div>
+							</div>
+
+					</div>
+
 				</section>
 			</nav>
 		)
