@@ -96,9 +96,12 @@ class App extends React.Component {
   getStorageList = () => {
     const storageReference = firebase.storage().ref();
     storageReference.listAll().then(res => {
+    console.log("TCL: App -> getStorageList -> res", res.items.length + res.prefixes.length)
+    const dataLength = res.items.length + res.prefixes.length
       this.setState({
-        folder: res.prefixes,
-        file: res.items
+        folderData: res.prefixes,
+        fileData: res.items,
+        dataLength: dataLength
       })
       res.prefixes.forEach(folderRef => {
         //console.log("ROOT 資料夾", folderRef)
@@ -116,13 +119,14 @@ class App extends React.Component {
 
   render() {
     console.log(this.state)
-    const { folder } = this.state
-    if (!folder) return false
+    const { folderData, fileData, dataLength } = this.state
+    console.log("TCL: App -> render -> folderData, fileData", folderData, fileData)
+    if ( dataLength === 0 ) return false
     return (
       <div>
         <DriveHeader />
         <DriveNav />
-        <DriveMain />
+        <DriveMain folderData={folderData} fileData={fileData} />
         {/* <h2>Folder</h2>
         <div className="floder-block">
           {folder.map(item => {
