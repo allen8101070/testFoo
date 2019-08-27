@@ -42,7 +42,7 @@ export default class DriveMain extends React.Component {
 								)
 							})}
 						</div>
-					)	: null}
+					) : null}
 
 					<div className="dirve-main-header">
 						<div className="dirve-main-title">files</div>
@@ -76,96 +76,30 @@ export default class DriveMain extends React.Component {
 							</div>
 						</div>
 
-						<div className="file-list-item">
-							<div className="file-list-item-icon">
-								<img src={excel} alt="excel-icon" />
-							</div>
-							<div className="file-list-item-name">
-								<span>Ad-benefit-august.csv</span>
-							</div>
-							<div className="file-list-item-location">
-								<span>my drive</span>
-							</div>
-							<div className="file-list-item-time">
-								<span>2019/8/20</span>
-							</div>
-							<div className="file-list-item-size">
-								<span>6 kb</span>
-							</div>
-						</div>
-
-						<div className="file-list-item">
-							<div className="file-list-item-icon">
-								<img src={ppt} alt="ppt-icon" />
-							</div>
-							<div className="file-list-item-name">
-								<span>How To Pick A Right Web Font.pptx</span>
-							</div>
-							<div className="file-list-item-location">
-								<span>my drive</span>
-							</div>
-							<div className="file-list-item-time">
-								<span>2019/8/20</span>
-							</div>
-							<div className="file-list-item-size">
-								<span>32 mb</span>
-							</div>
-						</div>
-
-						<div className="file-list-item">
-							<div className="file-list-item-icon">
-								<img src={pdf} alt="pdf-icon" />
-							</div>
-							<div className="file-list-item-name">
-								<span>Presentation-Q1.pdf</span>
-							</div>
-							<div className="file-list-item-location">
-								<span>my drive</span>
-							</div>
-							<div className="file-list-item-time">
-								<span>2019/8/20</span>
-							</div>
-							<div className="file-list-item-size">
-								<span>10 mb</span>
-							</div>
-						</div>
-
-						<div className="file-list-item">
-							<div className="file-list-item-icon">
-								<img src={word} alt="word-icon" />
-							</div>
-							<div className="file-list-item-name">
-								<span>New document.doc</span>
-							</div>
-							<div className="file-list-item-location">
-								<span>my drive</span>
-							</div>
-							<div className="file-list-item-time">
-								<span>2019/8/20</span>
-							</div>
-							<div className="file-list-item-size">
-								<span>102 kb</span>
-							</div>
-						</div>
-
-						<div className="file-list-item">
-							<div className="file-list-item-icon">
-								<img src={unkown} alt="unkown-icon" />
-							</div>
-							<div className="file-list-item-name">
-								<span>Readme.txt</span>
-							</div>
-							<div className="file-list-item-location">
-								<span>my drive</span>
-							</div>
-							<div className="file-list-item-time">
-								<span>2019/8/20</span>
-							</div>
-							<div className="file-list-item-size">
-								<span>2 kb</span>
-							</div>
-						</div>
-
+						{fileData.length !== 0 ? (
+							fileData.map(item => {
+								return (
+									<div className="file-list-item" key={item.name}>
+									<div className="file-list-item-icon">
+										<img src={excel} alt="excel-icon" />
+									</div>
+									<div className="file-list-item-name">
+										<span>{item.name}</span>
+									</div>
+									<div className="file-list-item-location">
+										<span>my drive</span>
+									</div>
+									<div className="file-list-item-time">
+										<span>2019/8/20</span>
+									</div>
+									<div className="file-list-item-size">
+										<span>6 kb</span>
+									</div>
+								</div>
+								)
+							})
+						)
+							: null}
 					</div>
 
 				</section>
