@@ -2,25 +2,3 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
-
-.floder-block {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.floder-item {
-  width: 160px;
-  height: 60px;
-  background-color: #f2f2f2;
-}
-.file-block {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-.file-item {
-  width: 160px;
-  height: 60px;
-  background-color: #f2f2f2;
-}

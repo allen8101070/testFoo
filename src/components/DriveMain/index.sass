@@ -1,3 +1,5 @@
+@import "../../App.sass"
+
 .dirve-main
   width: 100%
   min-height: 700px
@@ -41,8 +43,8 @@
   display: flex
   margin: 20px
   align-items: center
-  background-color: #fff
-  box-shadow: 0px 2px 4px #ccc
+  background-color: $drive-white
+  box-shadow: 0px 2px 4px $drive-gray
   border-radius: 8px
   cursor: pointer
   i
@@ -59,7 +61,7 @@
   line-height: 70px
 
 .file-list-header
-  border-bottom: 2px solid #ccc
+  border-bottom: 2px solid $drive-gray
 
 .file-list-header-name
   display: flex
@@ -98,7 +100,7 @@
 
 .file-list-item
   color: #666
-  border-bottom: 2px solid #ccc
+  border-bottom: 2px solid $drive-gray
 
 .file-list-item-name
   display: flex

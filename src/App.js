@@ -3,12 +3,12 @@ import DriveHeader from './components/DriveHeader'
 import DriveNav from './components/DriveNav'
 import DriveFooter from './components/DriveFooter'
 import DriveMain from './components/DriveMain'
-import { Router, Route } from 'react-router-dom';
-import { createHashHistory } from 'history';
+
+
 import firebase from "firebase/app";
 import "firebase/storage";
 import config from './config'
-const history = createHashHistory();
+
 class App extends React.Component {
   constructor() {
     super()
@@ -53,7 +53,6 @@ class App extends React.Component {
 
   handleFileClicks = event => {
     console.log("TCL: App -> event", event.target)
-    const bucket = event.target.getAttribute("data-bucket")
     const fullpath = event.target.getAttribute("data-fullpath")
     const name = event.target.getAttribute("data-name")
     this.getFileDownload(fullpath,name)
@@ -117,7 +116,7 @@ class App extends React.Component {
 
   render() {
     console.log(this.state)
-    const { folder, file } = this.state
+    const { folder } = this.state
     if (!folder) return false
     return (
       <div>

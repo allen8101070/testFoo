@@ -1,5 +1,8 @@
+@import "../../App.sass"
+
+
 .dirve-nav
-  background: #EFEFEF 0% 0% no-repeat padding-box
+  background: $drive-white-gray 0% 0% no-repeat padding-box
   opacity: 1
   padding-top: 96px
   > section
@@ -29,7 +32,7 @@
   &__first
     font-weight: bold
     text-transform: uppercase
-    color: #000
+    color: $drive-black
 
   &-control
     display: flex
@@ -43,7 +46,7 @@
     cursor: pointer
     line-height: 48px
     &:hover
-      background: #D5D5D5
+      background: $drive-gray
 
   &-control i
     vertical-align: middle
@@ -51,11 +54,11 @@
 .sharelink-block
   width: 350px
   height: 218px
-  background: #000
+  background: $drive-black
   position: absolute
   right: 80px
   top: 90px
-  background: #FFFFFF
+  background: $drive-white
   border-radius: 10px
   box-shadow: 0px 8px 16px #999
 
@@ -66,7 +69,7 @@
     width: 255px
     margin-left: auto
     margin-right: auto
-    color: #000000
+    color: $drive-black
     height: 80px
     text-transform: uppercase
     font-size: 24px
@@ -78,9 +81,9 @@
     width: 255px
     height: 48px
     border-radius: 10px
-    border: 1px solid #2A8CFD
+    border: 1px solid $drive-blue
     outline: none
-    color: #2A8CFD
+    color: $drive-blue
     text-indent: 14px
     display: block
     margin-left: auto
@@ -103,6 +106,6 @@
       border: 0px
 
     &__copy
-      background: #2A8CFD 0% 0% no-repeat padding-box
-      border: 1px solid #2A8CFD
-      color: #fff
+      background: $drive-blue 0% 0% no-repeat padding-box
+      border: 1px solid $drive-blue
+      color: $drive-white
