@@ -1,0 +1,60 @@
+.dirve-header
+  position: fixed
+  width: 100%
+  background: #FFFFFF 0% 0% no-repeat padding-box
+  box-shadow: 0px 2px 0px #D5D5D5
+  opacity: 1
+  z-index: 99
+  > section
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 1280px
+    height: 96px
+    padding-left: 85px
+    padding-right: 85px
+    margin-right: auto
+    margin-left: auto
+  &-nav
+    display: flex
+    justify-content: space-between
+    list-style: none
+    margin: 0
+    padding: 0
+    li
+      margin-right: 32px
+      /* 點擊導覽列添加 */
+      /* border-bottom : 2px solid #2A8CFD;*/
+    a
+      color: inherit
+      font-size: 16px
+      line-height: 96px
+      text-decoration: none
+      &:hover, &:focus
+        color: #2A8CFD
+
+  &-search
+    position: relative
+    display: flex
+    align-items: center
+    > input
+      border: 0px
+      top: 24px
+      left: 655px
+      width: 540px
+      height: 48px
+      background: #EFEFEF 0% 0% no-repeat padding-box
+      border-radius: 24px
+      opacity: 1
+      text-indent: 24px
+      &:focus
+        outline: none
+        border: 1px solid #2A8CFD
+        color: #2A8CFD
+    i
+      position: absolute
+      right: 24px
+      top: 50%
+      transform: translateY(-50%)
+    > input:focus ~ i
+      color: #2A8CFD
