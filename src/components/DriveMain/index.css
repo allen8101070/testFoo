@@ -1,0 +1,34 @@
+.dirve-main {
+	width: 100%;
+	min-height: 700px;
+	background: #999;
+}
+
+.dirve-main > section {
+	max-width: 1280px;
+	padding-left: 85px;
+	padding-right: 85px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.dirve-main-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.dirve-main-header i {
+	margin-left: 32px;
+	cursor: pointer;
+}
+.dirve-main-title {
+	font-size: 24px;
+}
+.dirve-main-showall {
+	cursor: pointer;
+}

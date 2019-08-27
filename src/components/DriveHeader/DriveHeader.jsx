@@ -22,6 +22,9 @@ export default class DriveHeader extends React.Component {
                 <li>
                     <a href="#">TRASH</a>
                 </li>
+                <li>
+                    <a href="#">DEMO</a>
+                </li>
             </ul>
             <label className="dirve-header-search">
                 <input type="text" />

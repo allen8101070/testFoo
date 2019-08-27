@@ -1,6 +1,8 @@
 import React from 'react';
 import DriveHeader from './components/DriveHeader'
 import DriveNav from './components/DriveNav'
+import DriveFooter from './components/DriveFooter'
+import DriveMain from './components/DriveMain'
 import { Router, Route } from 'react-router-dom';
 import { createHashHistory } from 'history';
 import firebase from "firebase/app";
@@ -103,7 +105,7 @@ class App extends React.Component {
         //console.log("ROOT 資料夾", folderRef)
       })
       res.items.forEach(function (itemRef) {
-        //console.log("itemRef 檔案", itemRef)
+        console.log("itemRef 檔案", itemRef)
       })
     })
   }
@@ -121,7 +123,8 @@ class App extends React.Component {
       <div>
         <DriveHeader />
         <DriveNav />
-        <h2>Folder</h2>
+        <DriveMain />
+        {/* <h2>Folder</h2>
         <div className="floder-block">
           {folder.map(item => {
             return (
@@ -155,7 +158,8 @@ class App extends React.Component {
             })
             }
           </div>
-        </div>
+        </div> */}
+        <DriveFooter/>
       </div>
     )
   }
