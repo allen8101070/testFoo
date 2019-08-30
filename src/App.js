@@ -5,7 +5,7 @@ import DriveFooter from './components/DriveFooter'
 import DriveMain from './components/DriveMain'
 
 
-import firebase from "firebase/app";
+import * as firebase from "firebase/app";
 import "firebase/storage";
 import config from './config'
 
